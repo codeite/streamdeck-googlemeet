@@ -20,4 +20,26 @@ export class Button {
 
 		this.websocketToStreamDeck.send(JSON.stringify(json));
 	}
+
+	setTitle(title: string) {
+		var json = {
+			"event": 'setTitle',
+			"context": this.context,
+			"payload": {
+				"title": title
+			}
+		}
+		this.websocketToStreamDeck.send(JSON.stringify(json));
+	};
+
+	setSvg(svg: string) {
+		var json = {
+			"event": 'setTitle',
+			"context": this.context,
+			"payload": {
+				"image": svg
+			}
+		}
+		this.websocketToStreamDeck.send(JSON.stringify(json));
+	};
 }

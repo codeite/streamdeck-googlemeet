@@ -50,6 +50,41 @@
       "SupportedInMultiActions": true,
       "Tooltip": "Toggle Google Meet mute",
       "UUID": "be.jeroenvdb.googlemeet.togglemute"
+    },
+    {
+      "Icon": "images/toggle-camera",
+      "Name": "Toggle Camera",
+      "States": [
+        {
+          "Name": "Unhidden",
+          "Title": "Unhidden",
+          "Image": "images/unhide",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        },
+        {
+          "Name": "Hiden",
+          "Title": "Hiden",
+          "Image": "images/hide",
+          "TitleAlignment": "bottom",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Toggle Google Meet camera",
+      "UUID": "be.jeroenvdb.googlemeet.togglecamera"
+    },
+    {
+      "Icon": "images/leave",
+      "Name": "On Call/leave",
+      "States": [
+        {
+          "Name": "Not on call",
+          "Image": "images/nocall"
+        }
+      ],
+      "Tooltip": "Show if on call and leave",
+      "UUID": "be.jeroenvdb.googlemeet.onleavecall"
     }
   ],
   "SDKVersion": 2,
